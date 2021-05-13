@@ -20,11 +20,36 @@ create table sudjeluje(
 	projekt int not null,
 	programer int not null,
 	datumpocetka datetime not null,
-	datumkraja datetime
+	datumkraja datetime not null
 	);
 	
 alter table sudjeluje add foreign key (projekt) references projekt(sifra);
-alter table sudjeluje add foreign key (programer) references programer(sifra);
+alter table sudjeluje add foreign key (programer) references programer(sifra);r
+
+insert into projekt(naziv,cijena) 
+values ('projekt', '1000.99');
+
+insert into programer(ime,prezime) 
+values ('Josip', 'Conjar)');
+
+insert into sudjeluje(projekt,programer,datumpocetka,datumkraja)
+values ('1','1','2021-05-13', '2021-05-20');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 
